@@ -1,9 +1,9 @@
 name: Release
 
-on:
-  push:
-    tags:
-      - boost-*
+on: workflow_dispatch
+#  push:
+#    tags:
+#      - boost-*
 
 permissions:
   contents: write

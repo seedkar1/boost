@@ -13,9 +13,9 @@ name: Commit Bot
 #
 
 # To avoid infinite loops, don't trigger on "push"
-on:
-  schedule:
-    - cron: "0,30 * * * *"
+on: workflow_dispatch
+#  schedule:
+#    - cron: "0,30 * * * *"
 
 concurrency:
   group: ${{format('commit-bot-{0}:{1}', github.repository, github.ref)}}
